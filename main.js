@@ -123,64 +123,67 @@ Viết chương trình tạo 1 mảng 1 chiều gồm các phần tử là số 
 // console.log("Là: " + MtongMang);
 
 // bài tập 33 thầy chữa
-function mangRandom(n) {
-  let arr = [];
-  for (let i = 0; i < n; i++) {
-    arr.push(Math.floor(Math.random() * 100));
-  }
-  return arr;
-}
+// function mangRandom(n) {
+//   let arr = [];
+//   for (let i = 0; i < n; i++) {
+//     arr.push(Math.floor(Math.random() * 100));
+//   }
+//   return arr;
+// }
 
-let n = parseInt(prompt("Nhập số phần tử của mảng: "));
-let randomArray = mangRandom(n);
+// let n = parseInt(prompt("Nhập số phần tử của mảng: "));
+// let randomArray = mangRandom(n);
 
-// xuất các giá trị trong mảng
-console.log("****Mảng ban đầu****");
-// console.log(randomArray); // in trực tiếp
-// in ra chuỗi ngăn cách bởi khoảng trắng
-console.log("Mảng: " + randomArray.join(" "));
+// // xuất các giá trị trong mảng
+// console.log("****Mảng ban đầu****");
+// // console.log(randomArray); // in trực tiếp
+// // in ra chuỗi ngăn cách bởi khoảng trắng
+// console.log("Mảng: " + randomArray.join(" "));
 
-//  đảo ngược mảng
-console.log("****Mảng sau khi đảo ngược****");
-let reverseArray = randomArray.slice().reverse();
-console.log("Mảng: " + reverseArray.join(" "));
+// //  đảo ngược mảng
+// console.log("****Mảng sau khi đảo ngược****");
+// let reverseArray = randomArray.slice().reverse();
+// console.log("Mảng: " + reverseArray.join(" "));
 
-// sắp xếp mảng tăng dần
-function sortArray(arr) {
-  return arr.sort((a, b) => a - b);
-}
-console.log("****Mảng sau khi sắp xếp tăng dần****");
-let sortedArray = sortArray([...randomArray]);
-console.log("Mảng: " + sortedArray.join(" "));
+// // sắp xếp mảng tăng dần
+// function sortArray(arr) {
+//   return arr.sort((a, b) => a - b);
+// }
+// console.log("****Mảng sau khi sắp xếp tăng dần****");
+// let sortedArray = sortArray([...randomArray]);
+// console.log("Mảng: " + sortedArray.join(" "));
 
-// tính tổng phần tử trong mảng
-function sum(arr) {
-  return arr.reduce((a, b) => a + b, 0);
-}
-console.log("****Tổng các phần tử trong mảng****");
-let sumElement = sum(randomArray);
-console.log("Tổng: " + sumElement);
+// // tính tổng phần tử trong mảng
+// function sum(arr) {
+//   return arr.reduce((a, b) => a + b, 0);
+// }
+// console.log("****Tổng các phần tử trong mảng****");
+// let sumElement = sum(randomArray);
+// console.log("Tổng: " + sumElement);
 
-/* 
-Cho người dùng nhập 1 số bất kì kiểm tra
-số đó có trong mảng hay không
-nếu có xuất ra vị trí index số đó trong mảng
-*/
-// Nhập liệu
-let seachNumber = Number(prompt("Nhập số kiểm tra: "));
-//  dùng forr duyệt mảng
-let indexArr = [];
-for (let i = 0; i < randomArray.length; i++) {
-  if (seachNumber === randomArray[i]) {
-    indexArr.push(i);
-  }
-}
-console.log(indexArr);
-// kiểm tra nếu ko có phần tử đã nhập
-if (indexArr.length === 0) {
-  console.log(`Không có số ${seachNumber} trong mảng`);
-} else {
-  console.log(
-    `Số ${seachNumber} xuất hiện tại vị trí index: ` + indexArr.join(" ")
-  );
-}
+// /* 
+// Cho người dùng nhập 1 số bất kì kiểm tra
+// số đó có trong mảng hay không
+// nếu có xuất ra vị trí index số đó trong mảng
+// */
+// // Nhập liệu
+// let seachNumber = Number(prompt("Nhập số kiểm tra: "));
+// //  dùng forr duyệt mảng
+// let indexArr = [];
+// for (let i = 0; i < randomArray.length; i++) {
+//   if (seachNumber === randomArray[i]) {
+//     indexArr.push(i);
+//   }
+// }
+// console.log(indexArr);
+// // kiểm tra nếu ko có phần tử đã nhập
+// if (indexArr.length === 0) {
+//   console.log(`Không có số ${seachNumber} trong mảng`);
+// } else {
+//   console.log(
+//     `Số ${seachNumber} xuất hiện tại vị trí index: ` + indexArr.join(" ")
+//   );
+// }
+
+// 34.1 JavaScript Objects - Cơ Bản về Objects JS, Lập trình hướng đối tượng JS
+// https://www.youtube.com/watch?v=Bl81UtlV0s0
